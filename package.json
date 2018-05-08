@@ -1,0 +1,12 @@
+{
+  "name": "todotron",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Anindya Sundar Paul",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^2.0.0"
+  }
+}
