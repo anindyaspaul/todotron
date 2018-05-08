@@ -4,9 +4,9 @@
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="css/photon.min.css">
+<link rel="stylesheet" href="fontawesome/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="css/styles.css">
 
-<!-- Javascript -->
-<script src="js/menu.js" charset="utf-8"></script>
 </head>
 <body>
 <div class="window">
@@ -16,59 +16,66 @@
         <div class="pane-group">
             <div class="pane pane-sm sidebar">
                 <nav class="nav-group">
-                    <h5 class="nav-group-title">Tags</h5>
+                    <h5 class="nav-group-title">
+                        <!--<span class="icon icon-tag"></span>-->
+                        Tags
+                    </h5>
                     <span class="nav-group-item">
-                        <span class="icon icon-tag"></span>
+                        <span class="fas fa-toggle-on"></span>
                         ipay
                     </span>
-                    <span class="nav-group-item active">
-                        <span class="icon icon-tag"></span>
+                    <span class="nav-group-item">
+                        <span class="fas fa-toggle-off"></span>
                         personal
                     </span>
                     <span class="nav-group-item">
-                        <span class="icon icon-tag"></span>
+                        <span class="fas fa-toggle-off"></span>
                         computer
                     </span>
                     <span class="nav-group-item">
-                        <span class="icon icon-tag"></span>
+                        <span class="fas fa-toggle-on"></span>
                         home
                     </span>
                     <span class="nav-group-item">
-                        <span class="icon icon-tag"></span>
+                        <span class="fas fa-toggle-on"></span>
                         phone
                     </span>
                 </nav>
 
                 <nav class="nav-group">
-                    <h5 class="nav-group-title">Projects</h5>
+                    <h5 class="nav-group-title">
+                        <!--<span class="icon icon-folder"></span>-->
+                        Projects
+                    </h5>
                     <span class="nav-group-item">
-                        <span class="icon icon-folder"></span>
+                        <span class="fas fa-toggle-off"></span>
                         ipay
                     </span>
-                    <span class="nav-group-item active">
-                        <span class="icon icon-folder"></span>
+                    <span class="nav-group-item">
+                        <span class="fas fa-toggle-on"></span>
                         personal
                     </span>
                     <span class="nav-group-item">
-                        <span class="icon icon-folder"></span>
+                        <span class="fas fa-toggle-on"></span>
                         computer
                     </span>
                     <span class="nav-group-item">
-                        <span class="icon icon-folder"></span>
+                        <span class="fas fa-toggle-off"></span>
                         home
                     </span>
                     <span class="nav-group-item">
-                        <span class="icon icon-folder"></span>
+                        <span class="fas fa-toggle-on"></span>
                         phone
                     </span>
                 </nav>
             </div>
 
-            <div class="pane">
-
+            <div class="pane" id="todo-list">
             </div>
         </div>
     </div>
 </div>
+<script src="js/jsTodoTxt.js" charset="utf-8"></script>
+<script src="js/index.js" charset="utf-8"></script>
 </body>
 </html>
