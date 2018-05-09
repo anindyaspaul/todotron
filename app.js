@@ -1,4 +1,7 @@
-var {app, BrowserWindow} = require('electron')
+const url = require('url')
+const path = require('path')
+
+const {app, BrowserWindow} = require('electron')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -27,7 +30,11 @@ app.on('ready', function () {
     });
 
     // and load the index.html of the app.
-    mainWindow.loadURL('file://' + __dirname + '/index.html');
+    mainWindow.loadURL(url.format({
+        pathname: path.join(__dirname, 'index.html'),
+        protocol: 'file:',
+        slashes: true
+    }));
 
     // Open the DevTools.
     //mainWindow.openDevTools();
