@@ -1,7 +1,7 @@
-const url = require('url')
-const path = require('path')
+const url = require('url');
+const path = require('path');
 
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow} = require('electron');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -11,7 +11,7 @@ var mainWindow = null;
 app.on('window-all-closed', function () {
     // On OS X it is common for applications and their menu bar
     // to stay active until the user quits explicitly with Cmd + Q
-    if (process.platform != 'darwin') {
+    if (process.platform !== 'darwin') {
         app.quit();
     }
 });
@@ -31,7 +31,7 @@ app.on('ready', function () {
 
     // and load the index.html of the app.
     mainWindow.loadURL(url.format({
-        pathname: path.join(__dirname, 'index.html'),
+        pathname: path.join(__dirname, 'templates/index.html'),
         protocol: 'file:',
         slashes: true
     }));
